@@ -9,13 +9,10 @@
 
 .headerBackground {
     background-color: gray;
-    /* background-image: url(../media/photographerBanner_1980.jpg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    height: 300px; */
 }
 
 .itemsNav {
+    font-family:'Roboto', sans-serif;
     border: solid 1px  black;
     font-size: 1rem;
     color: white;
@@ -37,4 +34,207 @@
 .imgRound {
     border: solid 2px white;
     border-radius: 20px;
+}
+
+/* Footer */
+
+.footer {
+    display: flex;
+    background-color: black;
+    font-family:'Roboto', sans-serif;
+    font-size: 1rem;
+    text-align: justify;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    justify-content: space-evenly;  
+    color:gray;
+}
+
+.containerFooterEnlacesHeader {
+    color:white;
+    padding-bottom: 0.5rem;
+}
+
+.containerFooterSocialHeader {
+    color: white;
+}
+
+.containerFooterEnlaces__list{
+    list-style: none;
+    text-decoration: none;
+}
+
+.containerFooterEnlaces__list li a {
+    color: gray;
+    transition: color 0.3s;
+    list-style: none;
+    text-decoration: none;
+}
+
+.containerFooterEnlaces__list li a:hover {
+    color: white;
+}
+
+.containerFooterEnlaces__itemActivo {
+    font-weight: bold;
+}
+
+.socialMediaIconsCont {
+    padding-top: 2rem;
+}
+
+.socialMediaIconsCont a {
+    color:gray;
+    padding-right: 1rem;
+    transition: color 0.3s;
+    list-style: none;
+    text-decoration: none;
+}
+
+.socialMediaIconsCont a:hover {
+    color: white;
+}
+
+
+/* RESPONSIVE CON MEDIA QUERY */
+
+/* tablet */
+
+@media (min-width:651px) and (max-width:1000px) {
+
+
+    /* .header {
+        height: 20vh;
+    }
+
+    .header img {
+        width: 50vw;
+    }
+    
+    .navHeader ul li{
+        font-size: 1rem;
+    }
+
+    .seccionPromos {
+        background-image: url('../media/bannerpromociones_800.jpg');
+        height: 30vh;
+    }
+
+    .seccionPromos h1,.seccionPromos h2 {
+        left: calc(100% - 400px);
+        top: calc(100% - 60px); 
+        font-size:medium;
+    }
+
+    .eventos, .estudio, .corporativo, .viajes, .cursos {
+        height: 20rem;
+    }
+
+    .eventos h2, .estudio h2, .corporativo h2, .viajes h2, .cursos h2 {
+        top: 20px;
+        font-size: 50px;
+        padding:10px;
+    }
+
+    .eventos img, .estudio img, .corporativo img, .viajes img, .cursos img {
+        width: 25vw;
+        height: auto;
+        border: solid 0.5rem white;
+        border-radius: 15px;
+    }
+    
+    .eventos img:hover, .estudio img:hover, .corporativo img:hover, .viajes img:hover, .cursos img:hover {
+        width: 26vw;
+    } */
+
+    .containerFooterEnlaces {
+        display: none;
+    }
+
+    .containerFooterSocial {
+        flex-direction: column;
+        justify-items: center; 
+    }
+
+    .containerFooterSocial h3 {
+        text-align: center;
+    }
+
+}
+
+/* movil diseñado para pantallas 320 a 500px*/
+
+@media (max-width:650px) {
+
+    /* .header {
+        background-image:gray;
+        height: 40vh;
+        width: auto;
+    }
+
+    .header img {
+        width: 70vw;
+        height: auto;
+        text-align: center;
+    }
+
+    .navHeader ul {
+        flex-direction: column;
+    }
+
+    .navHeader ul li{
+        font-size: 1rem;
+        margin-top:5px;
+        margin-bottom:5px;
+    }
+
+    .seccionPromos {
+        background-image: url('../media/bannerpromociones_500px.jpg');
+        height: 15vh;
+    }
+
+    .seccionPromos h1,.seccionPromos h2 {
+        left: calc(100% - 300px);
+        top: calc(100% - 20px); 
+        font-size:small;
+    }
+
+    .eventos, .estudio, .corporativo, .viajes, .cursos {
+        height: 20rem;
+    }
+
+    .eventos h2, .estudio h2, .corporativo h2, .viajes h2, .cursos h2 {
+        top: 20px;
+        font-size: 50px;
+        padding:10px;
+    }
+
+    .eventos img, .estudio img, .corporativo img, .viajes img, .cursos img {
+        width: 35vh;
+        height: auto;
+        border: solid 0.5rem white;
+        border-radius: 15px;
+    }
+    
+    .eventos img:hover, .estudio img:hover, .corporativo img:hover, .viajes img:hover, .cursos img:hover {
+        width: 34vh;
+    } */
+
+    .footer {
+        font-size: 1rem; 
+    }
+
+    .containerFooterEnlaces {
+        display: none;
+    }
+
+    .containerFooterSocial {
+        flex-direction: column;
+        justify-items: center; 
+    }
+
+    .containerFooterSocial h3 {
+        text-align: center;
+    }
+
 }
