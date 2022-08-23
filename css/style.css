@@ -1,3 +1,21 @@
+/* Reset de Margenes para inciar CSS y que ningun formato por defecto complique el diseño */
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* Importar Fonts de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,100&display=swap');
+
+/* Seteo de tamaño base del Font para poder usar "rem" */
+html { 
+    font-size: 62.5%;
+}
+
+/* Index */
+
 .doNotDisplay {
     display:none;
 }
@@ -14,7 +32,7 @@
 .itemsNav {
     font-family:'Roboto', sans-serif;
     border: solid 1px  black;
-    font-size: 1rem;
+    font-size: 2rem;
     color: white;
     margin-right: 5px;
     margin-left: 5px;
@@ -27,13 +45,25 @@
 
 .itemsNav:hover {
     border: solid 1px  white;
-    /* background-color: white; */
-    /* color: black; */
 }
+
+/* Efectos Index */
 
 .imgRound {
     border: solid 2px white;
     border-radius: 20px;
+}
+
+.eventos img, .estudio img, .corporativo img, .viajes img, .cursos img {
+    width: 30vw;
+    height: auto;
+    border: solid 1rem white;
+    border-radius: 30px;
+    transition: width 0.2s;
+}
+
+.eventos img:hover, .estudio img:hover, .corporativo img:hover, .viajes img:hover, .cursos img:hover {
+    width: 31vw;
 }
 
 /* Footer */
@@ -42,7 +72,7 @@
     display: flex;
     background-color: black;
     font-family:'Roboto', sans-serif;
-    font-size: 1rem;
+    font-size: 2rem;
     text-align: justify;
     padding-top: 20px;
     padding-bottom: 20px;
@@ -95,6 +125,187 @@
     color: white;
 }
 
+/* Quienes Somos - Estudia Fotografia */
+
+.sectionQuienesSomosHeader {
+    font-family:'Roboto', sans-serif;
+    font-size: 3rem;
+    height: 10vh;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    width: auto;
+    margin-top: 10vh;
+}
+
+.sectionQuienesSomos {
+    margin-left:5px;
+    padding-top: 100px;
+    padding-bottom: 20vh;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+}
+
+.imageQuienesSomos {
+    margin-right:5px;
+    border: solid 1rem black ;
+    border-radius: 30px 5px 5px 30px;
+    height: 400px;
+    width: auto;
+}
+
+.quienesSomosParrafo {
+    margin-right:5px;
+    font-family:'Roboto', sans-serif;
+    font-size: 2rem;
+    text-align: wrap;
+    color: black;
+    border: solid 1rem black ;
+    border-radius: 5px 30px 30px 5px;
+    height: 400px;
+    width: 300px;
+}
+
+/* nuestros servicios */
+.nuestrosServiciosHeader {
+    font-family:'Roboto', sans-serif;
+    font-size: 3rem;
+    height: 10vh;
+    text-align: center;
+    color: black;
+    width: auto;
+    margin-top: 10vh;
+}
+
+.nuestrosServiciosTodos1 {
+    padding-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 60px;
+}
+
+.nuestrosServiciosTodos2 {
+    padding-top: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-bottom: 20vh;
+}
+
+.wrapNuestrosServicios {
+    display: inline-block;
+    position: relative
+}
+
+.wrapNuestrosServicios h3 {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-family:'Roboto', sans-serif;
+    font-size: 3rem;
+    color: white;
+}
+
+.imageServicios {
+    margin-bottom:1px;
+    border: solid 1rem black ;
+    border-radius: 30px 30px 5px 5px;
+    height: 300px;
+    width: 300px;
+}
+
+.parrafoServicios {
+    margin-top:1px;
+    text-align: center;
+    font-family:'Roboto', sans-serif;
+    font-size: 1.5rem;
+    color:black;
+    border: solid 1rem black ;
+    border-radius: 5px 5px 30px 30px;
+    height: 250px;
+    width: 300px;
+}
+/* preguntas frecuentes */
+.sectionPreguntasFrecuentesHeader {
+    font-family:'Roboto', sans-serif;
+    font-size: 3rem;
+    height: 10vh;
+    text-align: center;
+    color: black;
+    width: auto;
+    margin-top: 10vh;
+}
+
+.mainPreguntasFrecuentes {
+    margin-top: 20vh;
+    display: flex;
+    flex-direction: column;
+    font-family:'Roboto', sans-serif;
+    font-size: 2rem;
+    text-align: center;
+    color: black;
+}
+
+.boxPreguntas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.boxPreguntasFrecuentes {
+    border: dotted thin black;
+    width: 900px;
+    height: auto;   
+}
+
+@keyframes animate {
+    0% {letter-spacing: normal;}
+    25% {letter-spacing: 2px;}
+    50% {letter-spacing: 4px;}
+    75% {letter-spacing: 2px;}
+    100%{letter-spacing: normal;}
+    }
+
+.Q1:hover {
+    background-color:#cccccc;
+    font-weight: bold;
+    animation-name: animate;
+    animation-iteration-count:initial;
+    animation-timing-function: ease-in;
+    animation-duration: 0.5s;
+}
+
+.Q2 {
+    transition: font-weight, background-color;
+}
+
+.Q2:hover {
+    font-weight: bold;
+    background-color:#cccccc;
+}
+
+.boxPreguntasFrecuentesUltima {
+    color:red;
+    font-size: 4rem;  
+}
+
+.boxPreguntasFrecuentesUltimaLink {
+    color:red;
+    font-size: 4rem;  
+    list-style: none;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.boxPreguntasFrecuentesUltimaLink:hover {
+    color:blue;
+}
 
 /* RESPONSIVE CON MEDIA QUERY */
 
@@ -102,50 +313,11 @@
 
 @media (min-width:651px) and (max-width:1000px) {
 
+/* index */
 
-    /* .header {
-        height: 20vh;
+    .itemsNav {
+        font-size: 1.5rem;
     }
-
-    .header img {
-        width: 50vw;
-    }
-    
-    .navHeader ul li{
-        font-size: 1rem;
-    }
-
-    .seccionPromos {
-        background-image: url('../media/bannerpromociones_800.jpg');
-        height: 30vh;
-    }
-
-    .seccionPromos h1,.seccionPromos h2 {
-        left: calc(100% - 400px);
-        top: calc(100% - 60px); 
-        font-size:medium;
-    }
-
-    .eventos, .estudio, .corporativo, .viajes, .cursos {
-        height: 20rem;
-    }
-
-    .eventos h2, .estudio h2, .corporativo h2, .viajes h2, .cursos h2 {
-        top: 20px;
-        font-size: 50px;
-        padding:10px;
-    }
-
-    .eventos img, .estudio img, .corporativo img, .viajes img, .cursos img {
-        width: 25vw;
-        height: auto;
-        border: solid 0.5rem white;
-        border-radius: 15px;
-    }
-    
-    .eventos img:hover, .estudio img:hover, .corporativo img:hover, .viajes img:hover, .cursos img:hover {
-        width: 26vw;
-    } */
 
     .containerFooterEnlaces {
         display: none;
@@ -160,65 +332,184 @@
         text-align: center;
     }
 
+/* quienes somos */
+
+    .sectionQuienesSomos {
+        padding-top: 50px;
+        padding-bottom: 10vh;
+    }
+
+    .imageQuienesSomos {
+        border: solid 0.5rem black ;
+        height: 200px;
+    }
+
+    .quienesSomosParrafo {
+        font-size: 1rem;
+        border: solid 0.5rem black ;
+        height: 200px;
+        width: 200px;
+    }
+
+/* nuestros servicios */
+
+    .nuestrosServiciosTodos1 {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .wrapNuestrosServicios h3 {
+        top: 20px;
+        left: 20px;
+        font-size: 2rem;
+    }
+
+    .imageServicios {
+        border: solid 0.5rem black ;
+        height: 150px;
+        width: 150px;
+    }
+
+    .parrafoServicios {
+        border: solid 0.5rem black ;
+        font-size: 1rem;
+        height: 200px;
+        width: 150px;
+    }
+
+    /* preguntas frecuentes */
+
+    .sectionPreguntasFrecuentesHeader {
+        font-size: 2rem;
+    }
+
+    .sectionPreguntasFrecuentesHeader img {
+        width: 400px;
+    }
+
+    .mainPreguntasFrecuentes {
+        margin-top: 15vh;
+        font-size: 1.5rem;
+    }
+
+    .boxPreguntasFrecuentes {
+        width: 500px;
+    }
+
+    .boxPreguntasFrecuentesUltima {
+        font-size: 3rem;  
+    }    
+
+    .boxPreguntasFrecuentesUltimaLink {
+        font-size: 3rem;  
+    }
+
 }
 
 /* movil diseñado para pantallas 320 a 500px*/
 
 @media (max-width:650px) {
 
-    /* .header {
-        background-image:gray;
-        height: 40vh;
+    .itemsNav {
+        font-size: 1rem;
+    }
+
+    /* quienes somos */
+
+    .sectionQuienesSomosHeader {
+        font-size: 2rem;
+        height: 5vh;
         width: auto;
     }
 
-    .header img {
-        width: 70vw;
-        height: auto;
-        text-align: center;
-    }
-
-    .navHeader ul {
+    .sectionQuienesSomos {
+        padding-top: 50px;
+        padding-bottom: 10vh;
         flex-direction: column;
+        align-items: center;
     }
 
-    .navHeader ul li{
-        font-size: 1rem;
-        margin-top:5px;
-        margin-bottom:5px;
+    .imageQuienesSomos {
+        border: solid 0.5rem black ;
+        border-radius: 30px 30px 5px 5px;
+        height: 200px;
+        width: 250px
     }
 
-    .seccionPromos {
-        background-image: url('../media/bannerpromociones_500px.jpg');
-        height: 15vh;
+    .quienesSomosParrafo {
+        font-size: 1.5rem;
+        border: solid 0.5rem black ;
+        border-radius: 5px 5px 30px 30px;
+        height: 300px;
+        width: 250px
     }
 
-    .seccionPromos h1,.seccionPromos h2 {
-        left: calc(100% - 300px);
-        top: calc(100% - 20px); 
-        font-size:small;
+    /* nuestros servicios */
+
+    .nuestrosServiciosHeader {
+        font-size: 2rem;
     }
 
-    .eventos, .estudio, .corporativo, .viajes, .cursos {
-        height: 20rem;
-    }
-
-    .eventos h2, .estudio h2, .corporativo h2, .viajes h2, .cursos h2 {
-        top: 20px;
-        font-size: 50px;
-        padding:10px;
-    }
-
-    .eventos img, .estudio img, .corporativo img, .viajes img, .cursos img {
-        width: 35vh;
-        height: auto;
-        border: solid 0.5rem white;
-        border-radius: 15px;
+    .nuestrosServiciosTodos1 {
+        padding-top: 30px;
+        padding-bottom: 0px;
+        flex-direction: column;
+        justify-content: space-between;
     }
     
-    .eventos img:hover, .estudio img:hover, .corporativo img:hover, .viajes img:hover, .cursos img:hover {
-        width: 34vh;
-    } */
+    .nuestrosServiciosTodos2 {
+        padding-top: 0px;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .wrapNuestrosServicios h3 {
+        top: 30px;
+        font-size: 2rem;
+    }
+    
+    .imageServicios {
+        margin-top: 20px;
+        border: solid 0.5rem black ;
+        height: 150px;
+        width: 150px;
+    }
+    
+    .parrafoServicios {
+        border: solid 0.5rem black ;
+        font-size: 1rem;
+        height: 150px;
+        width: 150px;
+    }
+
+    /* preguntas frecuentes */
+
+    .sectionPreguntasFrecuentesHeader {
+        font-size: 1.5rem;
+    }
+    
+    .sectionPreguntasFrecuentesHeader img {
+        width: 200px;
+    }
+
+    .mainPreguntasFrecuentes {
+        margin-top: 5vh;
+        font-size: 1rem;
+    }
+    
+    .boxPreguntasFrecuentes {
+        width: 200px;
+    }
+    
+    .boxPreguntasFrecuentesUltima {
+        font-size: 1.5rem;  
+    }   
+
+    .boxPreguntasFrecuentesUltimaLink {
+        font-size: 1.5rem;  
+    }
+
+    /* footer */
 
     .footer {
         font-size: 1rem; 
