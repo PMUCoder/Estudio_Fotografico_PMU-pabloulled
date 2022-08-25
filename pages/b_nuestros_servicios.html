@@ -1,10 +1,7 @@
 <!DOCTYPE html>
 
-<!-- Cambio el idioma a español -->
 <html lang="es">
 
-<!-- Agrego Metadata adicional, "title" Nombre a aparecer en la solapa del navegador, 
-agrego name para que mejore la busqueda, descripcion, autor y logo Link Icon peronsalizado de la pagina -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -19,10 +16,9 @@ agrego name para que mejore la busqueda, descripcion, autor y logo Link Icon per
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
-<!-- Body lleva el logo de la empresa (que ademas es link a la pagina index) y el menu principal de navegacion  -->
-<body>
+<body class="sectionBodyNuestrosServicios">
 
-    <header class="container-fluid">
+    <header>
         <nav class="navbar navbar-expand-lg headerBackground">
             <div>
                 <a class="navbar-brand" href="../index.html"><img src="../media/logo_resize.png" alt="Estudio Fotografia PMU" class="img-fluid"></a>
@@ -34,7 +30,7 @@ agrego name para que mejore la busqueda, descripcion, autor y logo Link Icon per
                 <div class="navbar-nav">
                     <a class="nav-link itemsNav" href="../index.html">Inicio</a>
                     <a class="nav-link itemsNav" href="../pages/a_quienes_somos.html">Quienes Somos</a>
-                    <a class="nav-link active itemsNav" aria-current="page" href="../pages/b_nuestros_servicios.html">Nuestros Servicios</a>
+                    <a class="nav-link active itemsNav itemActivo" aria-current="page" href="../pages/b_nuestros_servicios.html">Nuestros Servicios</a>
                     <a class="nav-link itemsNav" href="../pages/c_estudia_fotografia.html">Estudia Fotografia</a>
                     <a class="nav-link itemsNav" href="../pages/d_preguntas_frecuentes.html">Preguntas Frecuentes</a>
                     <a class="nav-link itemsNav" href="../pages/e_contacto.html">Contacto</a>
@@ -73,11 +69,10 @@ agrego name para que mejore la busqueda, descripcion, autor y logo Link Icon per
             </button>
         </section>
     
-    <!-- Seccion explicativa de los servicos que ofrece la empresa Una imagen
-    para cada servicio y un parrafo explicativo -->
+        <!-- Seccion explicativa de los servicos que ofrece la empresa -->
         <section>            
-            <div class="nuestrosServiciosHeader">
-                <h1>Nuestros Servicios</h1>
+            <div class="sectionHeader">
+                <h1 class="nuestrosServiciosHeader sectionHeaderWhiteH1">Nuestros Servicios</h1>
             </div>        
             <div class="nuestrosServiciosTodos1">
                 <div class="wrapNuestrosServicios" data-aos="flip-left">
@@ -111,21 +106,19 @@ agrego name para que mejore la busqueda, descripcion, autor y logo Link Icon per
         </section>    
     </main>
 
-    <!-- En el Footer nuevamente se agregan los links para que no se pierdan de vista los del header y
-    se agregan los links a canales de difusion en redes sociales y otras formas de comunicacion -->
-    <footer class="footer container-fluid">
+    <footer class="container-fluid">
         <div class="row containerFooterEnlaces">
             <div class="col mt-5">
                 <h3 class="containerFooterEnlacesHeader px-5">Enlaces</h3>
             </div>
             <div>
                 <ul class="containerFooterEnlaces__list px-5">
-                    <li><a class="containerFooterEnlaces__itemActivo" href="index.html">Inicio</a></li>
-                    <li><a href="pages/a_quienes_somos.html">Quienes Somos</a></li>
-                    <li><a href="pages/b_nuestros_servicios.html">Nuestros Servicios</a></li>
-                    <li><a href="pages/c_estudia_fotografia.html">Estudia Fotografia</a></li>
-                    <li><a href="pages/d_preguntas_frecuentes.html">Preguntas Frecuentes</a></li>
-                    <li><a href="pages/e_contacto.html">Contacto</a></li>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../pages/a_quienes_somos.html">Quienes Somos</a></li>
+                    <li><a class="containerFooterEnlaces__itemActivo" href="../pages/b_nuestros_servicios.html">Nuestros Servicios</a></li>
+                    <li><a href="../pages/c_estudia_fotografia.html">Estudia Fotografia</a></li>
+                    <li><a href="../pages/d_preguntas_frecuentes.html">Preguntas Frecuentes</a></li>
+                    <li><a href="../pages/e_contacto.html">Contacto</a></li>
                 </ul>
             </div>
         </div>

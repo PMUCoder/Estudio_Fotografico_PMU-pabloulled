@@ -1,10 +1,7 @@
 <!DOCTYPE html>
 
-<!-- Cambio el idioma a español -->
 <html lang="es">
 
-<!-- Agrego Metadata adicional, "title" Nombre a aparecer en la solapa del navegador, 
-agrego name para que mejore la busqueda, descripcion, autor y logo Link Icon peronsalizado de la pagina -->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,10 +15,9 @@ agrego name para que mejore la busqueda, descripcion, autor y logo Link Icon per
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
-<!-- Body lleva el logo de la empresa (que ademas es link a la pagina index) y el menu principal de navegacion  -->
-<body>
+<body class="sectionBodyContacto">
 
-    <header class="container-fluid">
+    <header>
         <nav class="navbar navbar-expand-lg headerBackground">
             <div>
                 <a class="navbar-brand" href="../index.html"><img src="../media/logo_resize.png" alt="Estudio Fotografia PMU" class="img-fluid"></a>
@@ -36,7 +32,7 @@ agrego name para que mejore la busqueda, descripcion, autor y logo Link Icon per
                     <a class="nav-link itemsNav" href="../pages/b_nuestros_servicios.html">Nuestros Servicios</a>
                     <a class="nav-link itemsNav" href="../pages/c_estudia_fotografia.html">Estudia Fotografia</a>
                     <a class="nav-link itemsNav" href="../pages/d_preguntas_frecuentes.html">Preguntas Frecuentes</a>
-                    <a class="nav-link active itemsNav" aria-current="page" href="../pages/e_contacto.html">Contacto</a>
+                    <a class="nav-link active itemsNav itemActivo" aria-current="page" href="../pages/e_contacto.html">Contacto</a>
                 </div>
             </div>
         </nav>
@@ -73,48 +69,32 @@ agrego name para que mejore la busqueda, descripcion, autor y logo Link Icon per
         </section>
 
         <!-- Formulario de contacto -->
-
         <section class="container-fluid pb-5">
-            <h1 class="text-center pt-5">Contactanos</h1>
-            <!-- Wrapper container -->
+            <h1 class="text-center sectionHeader sectionHeaderBlackH1">Contactanos</h1>
             <div class="container py-4">
-
-                <!-- Bootstrap 5 starter form -->
                 <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                
-                    <!-- Name input -->
                     <div class="mb-3">
                         <label class="form-label" for="Nombre y Apellido">Nombre y Apellido</label>
                         <input class="form-control" id="Nombre y Apellido" type="text" placeholder="Nombre y Apellido" data-sb-validations="required" />
                         <div class="invalid-feedback" data-sb-feedback="name:required">Name y Apellido son requeridos.</div>
                     </div>
-
-                    <!-- Email address input -->
                     <div class="mb-3">
                         <label class="form-label" for="email">Email</label>
                         <input class="form-control" id="email" type="email" placeholder="email" data-sb-validations="required, email" />
                         <div class="invalid-feedback" data-sb-feedback="email:required">Email es un campo requerido.</div>
                         <div class="invalid-feedback" data-sb-feedback="email:email">Email no valido.</div>
                     </div>
-
-                    <!-- Message input -->
                     <div class="mb-3">
                         <label class="form-label" for="mensaje">Mensaje</label>
                         <textarea class="form-control" id="mensaje" type="text" placeholder="Mensaje" style="height: 10rem;" data-sb-validations="required"></textarea>
                         <div class="invalid-feedback" data-sb-feedback="Mensaje:required">Mensaje es requerido.</div>
                     </div>
-
-                    <!-- Form submissions success message -->
                     <div class="d-none" id="submitSuccessMessage">
                         <div class="text-center mb-3">El mensaje se envio con exito!</div>
                     </div>
-                
-                    <!-- Form submissions error message -->
                     <div class="d-none" id="submitErrorMessage">
                         <div class="text-center text-danger mb-3">Error al enviar el mensaje!</div>
                     </div>
-                
-                    <!-- Form submit button -->
                     <div class="d-grid">
                         <button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Enviar</button>
                     </div>     
@@ -123,21 +103,19 @@ agrego name para que mejore la busqueda, descripcion, autor y logo Link Icon per
         </section>
     </main>
 
-    <!-- En el Footer nuevamente se agregan los links para que no se pierdan de vista los del header y
-    se agregan los links a canales de difusion en redes sociales y otras formas de comunicacion -->
-    <footer class="footer container-fluid">
+    <footer class="container-fluid">
         <div class="row containerFooterEnlaces">
             <div class="col mt-5">
                 <h3 class="containerFooterEnlacesHeader px-5">Enlaces</h3>
             </div>
             <div>
                 <ul class="containerFooterEnlaces__list px-5">
-                    <li><a class="containerFooterEnlaces__itemActivo" href="index.html">Inicio</a></li>
-                    <li><a href="pages/a_quienes_somos.html">Quienes Somos</a></li>
-                    <li><a href="pages/b_nuestros_servicios.html">Nuestros Servicios</a></li>
-                    <li><a href="pages/c_estudia_fotografia.html">Estudia Fotografia</a></li>
-                    <li><a href="pages/d_preguntas_frecuentes.html">Preguntas Frecuentes</a></li>
-                    <li><a href="pages/e_contacto.html">Contacto</a></li>
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../pages/a_quienes_somos.html">Quienes Somos</a></li>
+                    <li><a href="../pages/b_nuestros_servicios.html">Nuestros Servicios</a></li>
+                    <li><a href="../pages/c_estudia_fotografia.html">Estudia Fotografia</a></li>
+                    <li><a href="../pages/d_preguntas_frecuentes.html">Preguntas Frecuentes</a></li>
+                    <li><a class="containerFooterEnlaces__itemActivo" href="../pages/e_contacto.html">Contacto</a></li>
                 </ul>
             </div>
         </div>

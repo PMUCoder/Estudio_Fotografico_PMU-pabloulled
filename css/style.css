@@ -14,6 +14,34 @@ html {
     font-size: 62.5%;
 }
 
+/* resusable */
+
+.sectionHeaderBlackH1 {
+    font-family:'Roboto', sans-serif;
+    font-size: 5rem;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+}
+
+.sectionHeaderWhiteH1 {
+    font-family:'Roboto', sans-serif;
+    font-size: 5rem;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+}
+
+.sectionHeader {
+    height: 10vh;
+    width: auto;
+    margin-top: 10vh;
+}
+
+.sectionHeaderBlackH1 img {
+    text-align: center;
+}
+
 /* Index */
 
 .doNotDisplay {
@@ -21,7 +49,16 @@ html {
 }
 
 .h2Index {
-    color: black;
+    color: white;
+    font-family:'Roboto', sans-serif;
+    font-size: 5rem;        
+    font-weight: bold;
+}
+
+.h2IndexBlack {
+    color: gray;
+    font-family:'Roboto', sans-serif;
+    font-size: 5rem;        
     font-weight: bold;
 }
 
@@ -38,13 +75,17 @@ html {
     margin-left: 5px;
     transition: border 0.2s;
 }
-    
-.active {
+
+.itemActivo {
     border: solid 1px  white;
 }
 
 .itemsNav:hover {
     border: solid 1px  white;
+}
+
+.sectionBodyIndex {
+    background-image: url(../media/background.jpg);
 }
 
 /* Efectos Index */
@@ -60,7 +101,7 @@ html {
     border: solid 1rem white;
     border-radius: 30px;
     transition: width 0.2s;
-}
+    }
 
 .eventos img:hover, .estudio img:hover, .corporativo img:hover, .viajes img:hover, .cursos img:hover {
     width: 31vw;
@@ -68,7 +109,7 @@ html {
 
 /* Footer */
 
-.footer {
+footer {
     display: flex;
     background-color: black;
     font-family:'Roboto', sans-serif;
@@ -127,15 +168,12 @@ html {
 
 /* Quienes Somos - Estudia Fotografia */
 
-.sectionQuienesSomosHeader {
-    font-family:'Roboto', sans-serif;
-    font-size: 3rem;
-    height: 10vh;
-    text-align: center;
-    font-weight: bold;
-    color: black;
-    width: auto;
-    margin-top: 10vh;
+.sectionBodyQuienesSomos {
+    background-image: url(../media/background_010.jpg);
+}
+
+.sectionBodyEstudiaFotografia {
+    background-image: url(../media/background_6.jpg);
 }
 
 .sectionQuienesSomos {
@@ -149,7 +187,7 @@ html {
 
 .imageQuienesSomos {
     margin-right:5px;
-    border: solid 1rem black ;
+    border: solid 0.5rem white ;
     border-radius: 30px 5px 5px 30px;
     height: 400px;
     width: auto;
@@ -160,22 +198,17 @@ html {
     font-family:'Roboto', sans-serif;
     font-size: 2rem;
     text-align: wrap;
-    color: black;
-    border: solid 1rem black ;
+    color: white;
+    border: solid 0.5rem white ;
     border-radius: 5px 30px 30px 5px;
     height: 400px;
     width: 300px;
 }
 
 /* nuestros servicios */
-.nuestrosServiciosHeader {
-    font-family:'Roboto', sans-serif;
-    font-size: 3rem;
-    height: 10vh;
-    text-align: center;
-    color: black;
-    width: auto;
-    margin-top: 10vh;
+
+.sectionBodyNuestrosServicios {
+    background-image: url(../media/background_9.jpg);
 }
 
 .nuestrosServiciosTodos1 {
@@ -212,7 +245,7 @@ html {
 
 .imageServicios {
     margin-bottom:1px;
-    border: solid 1rem black ;
+    border: solid 0.5rem white ;
     border-radius: 30px 30px 5px 5px;
     height: 300px;
     width: 300px;
@@ -223,25 +256,36 @@ html {
     text-align: center;
     font-family:'Roboto', sans-serif;
     font-size: 1.5rem;
-    color:black;
-    border: solid 1rem black ;
+    color:white;
+    border: solid 0.5rem white ;
     border-radius: 5px 5px 30px 30px;
     height: 250px;
     width: 300px;
 }
+
 /* preguntas frecuentes */
+
+.sectionBodyPreguntasFrecuentes {
+    background-image: url(../media/preguntas_frecuentes_background.jpg);
+}
+
 .sectionPreguntasFrecuentesHeader {
-    font-family:'Roboto', sans-serif;
-    font-size: 3rem;
     height: 10vh;
     text-align: center;
-    color: black;
     width: auto;
     margin-top: 10vh;
 }
 
+.sectionPreguntasFrecuentesHeader H1{
+    font-family:'Roboto', sans-serif;
+    font-size: 5rem;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+}
+
 .mainPreguntasFrecuentes {
-    margin-top: 20vh;
+    margin-top: 15vh;
     display: flex;
     flex-direction: column;
     font-family:'Roboto', sans-serif;
@@ -307,20 +351,55 @@ html {
     color:blue;
 }
 
+/* contacto */
+
+.sectionBodyContacto {
+    background-image: url(../media/preguntas_frecuentes_background.jpg);
+}
+
 /* RESPONSIVE CON MEDIA QUERY */
 
 /* tablet */
 
 @media (min-width:651px) and (max-width:1000px) {
 
-/* index */
+    /* reusable */
 
     .itemsNav {
         font-size: 1.5rem;
     }
 
+    .sectionHeaderWhiteH1, .sectionHeaderBlackH1 {
+        font-size: 4rem;
+    }
+
+    .sectionHeader {
+        height: 10vh;
+        width: auto;
+        margin-top: 10vh;
+    }
+
+/* index */
+
     .containerFooterEnlaces {
         display: none;
+    }
+
+    .h2Index {
+        font-size: 3rem;        
+    }
+    
+    .h2IndexBlack {
+        font-size: 3rem;        
+    }
+
+    .eventos img, .estudio img, .corporativo img, .viajes img, .cursos img {
+        border: solid 0.5rem white;
+        }
+
+    .logoSize {
+        width: 400px;
+        height: auto;
     }
 
     .containerFooterSocial {
@@ -340,13 +419,11 @@ html {
     }
 
     .imageQuienesSomos {
-        border: solid 0.5rem black ;
         height: 200px;
     }
 
     .quienesSomosParrafo {
-        font-size: 1rem;
-        border: solid 0.5rem black ;
+        font-size: 1.2rem;
         height: 200px;
         width: 200px;
     }
@@ -365,30 +442,28 @@ html {
     }
 
     .imageServicios {
-        border: solid 0.5rem black ;
         height: 150px;
         width: 150px;
     }
 
     .parrafoServicios {
-        border: solid 0.5rem black ;
         font-size: 1rem;
-        height: 200px;
+        height: 170px;
         width: 150px;
     }
 
     /* preguntas frecuentes */
 
-    .sectionPreguntasFrecuentesHeader {
-        font-size: 2rem;
+    .sectionPreguntasFrecuentesHeader H1{
+        font-size: 4rem;
     }
 
-    .sectionPreguntasFrecuentesHeader img {
+    .sectionPreguntasFrecuentesHeader img{
         width: 400px;
     }
 
     .mainPreguntasFrecuentes {
-        margin-top: 15vh;
+        margin-top: 10vh;
         font-size: 1.5rem;
     }
 
@@ -410,17 +485,50 @@ html {
 
 @media (max-width:650px) {
 
+    /* resuable */
+
     .itemsNav {
         font-size: 1rem;
     }
 
-    /* quienes somos */
+    .sectionHeaderWhiteH1, .sectionHeaderBlackH1 {
+        font-size: 3rem;
+    }
 
-    .sectionQuienesSomosHeader {
-        font-size: 2rem;
+    .sectionHeader {
         height: 5vh;
         width: auto;
+        margin-top: 5vh;
     }
+
+    .sectionHeader img{
+        width: 200px;
+    }
+
+    /* index */
+
+    .h2Index {
+        font-size: 1rem;        
+    }
+    
+    .h2IndexBlack {
+        font-size: 1rem;        
+    }
+
+    .eventos img, .estudio img, .corporativo img, .viajes img, .cursos img {
+        border: solid 0.2rem white;
+        }
+
+    .socialMediaIconsCont a {
+        font-size:0.5rem;
+    }
+
+    .logoSize {
+        width: 150px;
+        height: auto;
+    }
+
+    /* quienes somos */
 
     .sectionQuienesSomos {
         padding-top: 50px;
@@ -430,25 +538,19 @@ html {
     }
 
     .imageQuienesSomos {
-        border: solid 0.5rem black ;
         border-radius: 30px 30px 5px 5px;
         height: 200px;
-        width: 250px
+        width: 250px;
     }
 
     .quienesSomosParrafo {
         font-size: 1.5rem;
-        border: solid 0.5rem black ;
         border-radius: 5px 5px 30px 30px;
-        height: 300px;
-        width: 250px
+        height: 250px;
+        width: 250px;
     }
 
     /* nuestros servicios */
-
-    .nuestrosServiciosHeader {
-        font-size: 2rem;
-    }
 
     .nuestrosServiciosTodos1 {
         padding-top: 30px;
@@ -470,13 +572,11 @@ html {
     
     .imageServicios {
         margin-top: 20px;
-        border: solid 0.5rem black ;
         height: 150px;
         width: 150px;
     }
     
     .parrafoServicios {
-        border: solid 0.5rem black ;
         font-size: 1rem;
         height: 150px;
         width: 150px;
@@ -485,9 +585,13 @@ html {
     /* preguntas frecuentes */
 
     .sectionPreguntasFrecuentesHeader {
-        font-size: 1.5rem;
+        margin-top: 5vh;
     }
-    
+
+    .sectionPreguntasFrecuentesHeader H1{
+        font-size: 3rem;
+    }
+
     .sectionPreguntasFrecuentesHeader img {
         width: 200px;
     }
