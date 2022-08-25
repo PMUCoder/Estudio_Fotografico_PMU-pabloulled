@@ -84,6 +84,10 @@ html {
     border: solid 1px  white;
 }
 
+.buttoncarouselBackground {
+    background-color: gray;
+}
+
 .sectionBodyIndex {
     background-image: url(../media/background.jpg);
 }
