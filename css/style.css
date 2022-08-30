@@ -71,9 +71,7 @@ h1 {
   .eventos .h2Index, .eventos .h2IndexBlack, .estudio .h2Index, .estudio .h2IndexBlack, .corporativo .h2Index, .corporativo .h2IndexBlack, .viajes .h2Index, .viajes .h2IndexBlack, .cursos .h2Index, .cursos .h2IndexBlack {
     font-size: 4rem; }
   .eventos img, .estudio img, .corporativo img, .viajes img, .cursos img {
-    border: solid 0.3rem white; }
-  .containerFooterEnlaces {
-    display: none; } }
+    border: solid 0.3rem white; } }
 
 @media (max-width: 650px) {
   .eventos .h2Index, .eventos .h2IndexBlack, .estudio .h2Index, .estudio .h2IndexBlack, .corporativo .h2Index, .corporativo .h2IndexBlack, .viajes .h2Index, .viajes .h2IndexBlack, .cursos .h2Index, .cursos .h2IndexBlack {
@@ -82,9 +80,7 @@ h1 {
     width: 80vw;
     border: solid 0.2rem white; }
     .eventos img:hover, .estudio img:hover, .corporativo img:hover, .viajes img:hover, .cursos img:hover {
-      width: 81vw; }
-  .containerFooterEnlaces {
-    display: none; } }
+      width: 81vw; } }
 
 footer {
   display: flex;
@@ -120,3 +116,11 @@ footer {
     text-decoration: none; }
     footer .socialMediaIconsCont a:hover {
       color: white; }
+
+@media (min-width: 651px) and (max-width: 1000px) {
+  .containerFooterEnlaces {
+    display: none; } }
+
+@media (max-width: 650px) {
+  .containerFooterEnlaces {
+    display: none; } }
