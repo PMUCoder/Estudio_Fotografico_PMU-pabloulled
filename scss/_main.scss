@@ -1,0 +1,85 @@
+@mixin h2 {
+    font-family:'Roboto', sans-serif;
+    font-size: $font_size_7;        
+    font-weight: bold;
+}
+
+.sectionBodyIndex {
+    background-image: url(../media/background.jpg);
+}
+
+h1 {
+    display:none
+}
+
+.buttoncarouselBackground {
+    background-color: $color_gray;
+}
+    
+.eventos, .estudio, .corporativo, .viajes, .cursos {
+
+    img {
+        width: 40vw;
+        height: auto;
+        border: solid 0.5rem white;
+        border-radius: 30px;
+        transition: width 0.2s;
+    
+        &:hover {
+            width: 41vw;
+        }
+    }
+}
+
+.h2Index {
+    @include h2;
+    color: $color_white;
+}
+
+.h2IndexBlack {
+    @include h2;
+    color: $color_gray;
+}
+
+@media (min-width:651px) and (max-width:1000px) {
+
+    .eventos, .estudio, .corporativo, .viajes, .cursos {
+
+        .h2Index, .h2IndexBlack {
+            font-size: $font_size_7 - 3rem;        
+        }
+
+        img {
+            border: solid 0.3rem $color_white;
+        }
+    }
+        
+    .containerFooterEnlaces {
+        display: none;
+    }
+
+}
+
+@media (max-width:650px) {
+
+    .eventos, .estudio, .corporativo, .viajes, .cursos {
+
+        .h2Index, .h2IndexBlack {
+            font-size: $font_size_7 - 5rem;        
+        }
+
+        img {
+            width: 80vw;
+            border: solid 0.2rem $color_white;
+
+            &:hover {
+                width: 81vw;
+            }
+        }
+    }
+
+    .containerFooterEnlaces {
+        display: none;
+    }
+
+}

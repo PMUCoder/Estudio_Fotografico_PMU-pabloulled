@@ -22,3 +22,101 @@ html {
       border: solid 1px white; }
     .headerBackground .itemsNav .itemActivo {
       border: solid 1px white; }
+
+@media (min-width: 651px) and (max-width: 1000px) {
+  .itemsNav {
+    font-size: 1.5rem; }
+  .logoSize {
+    width: 300px;
+    height: auto; } }
+
+@media (max-width: 650px) {
+  .itemsNav {
+    font-size: 1rem; }
+  .logoSize {
+    width: 150px;
+    height: auto; } }
+
+.sectionBodyIndex {
+  background-image: url(../media/background.jpg); }
+
+h1 {
+  display: none; }
+
+.buttoncarouselBackground {
+  background-color: gray; }
+
+.eventos img, .estudio img, .corporativo img, .viajes img, .cursos img {
+  width: 40vw;
+  height: auto;
+  border: solid 0.5rem white;
+  border-radius: 30px;
+  transition: width 0.2s; }
+  .eventos img:hover, .estudio img:hover, .corporativo img:hover, .viajes img:hover, .cursos img:hover {
+    width: 41vw; }
+
+.h2Index {
+  font-family: 'Roboto', sans-serif;
+  font-size: 7rem;
+  font-weight: bold;
+  color: white; }
+
+.h2IndexBlack {
+  font-family: 'Roboto', sans-serif;
+  font-size: 7rem;
+  font-weight: bold;
+  color: gray; }
+
+@media (min-width: 651px) and (max-width: 1000px) {
+  .eventos .h2Index, .eventos .h2IndexBlack, .estudio .h2Index, .estudio .h2IndexBlack, .corporativo .h2Index, .corporativo .h2IndexBlack, .viajes .h2Index, .viajes .h2IndexBlack, .cursos .h2Index, .cursos .h2IndexBlack {
+    font-size: 4rem; }
+  .eventos img, .estudio img, .corporativo img, .viajes img, .cursos img {
+    border: solid 0.3rem white; }
+  .containerFooterEnlaces {
+    display: none; } }
+
+@media (max-width: 650px) {
+  .eventos .h2Index, .eventos .h2IndexBlack, .estudio .h2Index, .estudio .h2IndexBlack, .corporativo .h2Index, .corporativo .h2IndexBlack, .viajes .h2Index, .viajes .h2IndexBlack, .cursos .h2Index, .cursos .h2IndexBlack {
+    font-size: 2rem; }
+  .eventos img, .estudio img, .corporativo img, .viajes img, .cursos img {
+    width: 80vw;
+    border: solid 0.2rem white; }
+    .eventos img:hover, .estudio img:hover, .corporativo img:hover, .viajes img:hover, .cursos img:hover {
+      width: 81vw; }
+  .containerFooterEnlaces {
+    display: none; } }
+
+footer {
+  display: flex;
+  background-color: black;
+  font-family: 'Roboto', sans-serif;
+  font-size: 2rem;
+  text-align: justify;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  justify-content: space-evenly;
+  color: gray; }
+  footer .containerFooterEnlacesHeader {
+    color: white;
+    padding-bottom: 0.5rem; }
+  footer .containerFooterEnlaces__itemActivo {
+    font-weight: bold; }
+  footer .containerFooterEnlaces__list li a {
+    color: gray;
+    transition: color 0.3s;
+    list-style: none;
+    text-decoration: none; }
+    footer .containerFooterEnlaces__list li a:hover {
+      color: white; }
+  footer .containerFooterSocialHeader {
+    color: white; }
+  footer .socialMediaIconsCont {
+    padding-top: 2rem; }
+  footer .socialMediaIconsCont a {
+    color: gray;
+    padding-right: 1rem;
+    transition: color 0.3s;
+    list-style: none;
+    text-decoration: none; }
+    footer .socialMediaIconsCont a:hover {
+      color: white; }
