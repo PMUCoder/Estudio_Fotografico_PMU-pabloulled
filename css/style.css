@@ -5,23 +5,27 @@
   list-style: none;
   text-decoration: none; }
 
+.bgHeader {
+  background-color: gray; }
+
+.bgFooter {
+  background-color: black; }
+
 html {
   font-size: 62.5%; }
 
-.headerBackground {
-  background-color: gray; }
-  .headerBackground .itemsNav {
-    font-family: 'Roboto', sans-serif;
-    border: solid 1px black;
-    font-size: 2rem;
-    color: white;
-    margin-right: 5px;
-    margin-left: 5px;
-    transition: border 0.2s; }
-    .headerBackground .itemsNav:hover {
-      border: solid 1px white; }
-    .headerBackground .itemsNav .itemActivo {
-      border: solid 1px white; }
+.itemsNav {
+  font-family: 'Roboto', sans-serif;
+  border: solid 1px black;
+  font-size: 2rem;
+  color: white;
+  margin-right: 5px;
+  margin-left: 5px;
+  transition: border 0.2s; }
+  .itemsNav:hover {
+    border: solid 1px white; }
+  .itemsNav .itemActivo {
+    border: solid 1px white; }
 
 @media (min-width: 651px) and (max-width: 1000px) {
   .itemsNav {
@@ -360,7 +364,7 @@ html {
     height: 150px;
     width: 150px; }
   .quienesSomosParrafo {
-    font-size: 1.5rem;
+    font-size: 1rem;
     border-radius: 5px 5px 10px 10px;
     border-width: 2px;
     height: 150px;
@@ -405,7 +409,6 @@ html {
 
 footer {
   display: flex;
-  background-color: black;
   font-family: 'Roboto', sans-serif;
   font-size: 2rem;
   text-align: justify;

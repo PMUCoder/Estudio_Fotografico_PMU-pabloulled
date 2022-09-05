@@ -1,7 +1,7 @@
 @mixin h2 {
     font-family:'Roboto', sans-serif;
     font-size: $font_size_7;        
-    font-weight: bold;
+    font-weight:bold;
 }
 
 .buttoncarouselBackground {
@@ -446,7 +446,7 @@
     }
 
     .quienesSomosParrafo {
-        font-size: 1.5rem;
+        font-size: 1rem;
         border-radius: 5px 5px 10px 10px;
         border-width: 2px;
         height: 150px;

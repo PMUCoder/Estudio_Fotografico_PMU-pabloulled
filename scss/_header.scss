@@ -1,5 +1,3 @@
-.headerBackground {
-    background-color: $color_gray;
     .itemsNav {
         font-family:'Roboto', sans-serif;
         border: $nav_border_active_black;
@@ -17,7 +15,6 @@
             border: $nav_border_active_white;
         }
     }
-}
 
 @media (min-width:651px) and (max-width:1000px) {
 
