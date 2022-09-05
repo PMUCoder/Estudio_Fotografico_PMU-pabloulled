@@ -4,6 +4,8 @@
     font-weight:bold;
 }
 
+$map_main: (font-weight: bold,text-align: center,color: black);
+
 .buttoncarouselBackground {
     background-color: $color_gray;
 }
@@ -55,10 +57,10 @@
 .sectionHeaderBlackH1 {
     font-family:'Roboto', sans-serif;
     font-size: 5rem;
-    font-weight: bold;
-    text-align: center;
+    font-weight: map-get($map_main, font-weight);
+    text-align: map-get($map_main, text-align);
     margin-top: 5vh;
-    color: black;
+    color: map-get($map_main, color);
 }
 
 .sectionHeaderWhiteH1 {
