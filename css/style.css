@@ -46,7 +46,7 @@ html {
 
 /*Index*/
 .sectionBodyIndex {
-  background-image: url(../media/background.jpg); }
+  background-image: url(../media/background.webp); }
 
 .doNotDisplay {
   display: none; }
@@ -74,10 +74,10 @@ html {
 
 /* Quienes Somos - Estudia Fotografia */
 .sectionBodyQuienesSomos {
-  background-image: url(../media/background_010.jpg); }
+  background-image: url(../media/background_010.webp); }
 
 .sectionBodyEstudiaFotografia {
-  background-image: url(../media/background_6.jpg); }
+  background-image: url(../media/background_6.webp); }
 
 .sectionHeaderBlackH1, .sectionHeaderWhiteH1 {
   font-family: 'Roboto', sans-serif;
@@ -118,7 +118,7 @@ html {
 
 /* nuestros servicios */
 .sectionBodyNuestrosServicios {
-  background-image: url(../media/background_9.jpg); }
+  background-image: url(../media/background_9.webp); }
 
 .nuestrosServiciosGroup, .nuestrosServiciosGroup1, .nuestrosServiciosGroup2 {
   padding-top: 60px;
@@ -168,7 +168,7 @@ html {
 
 /* preguntas frecuentes */
 .sectionBodyPreguntasFrecuentes {
-  background-image: url(../media/preguntas_frecuentes_background.jpg); }
+  background-image: url(../media/preguntas_frecuentes_background.webp); }
 
 .sectionPreguntasFrecuentesHeader {
   height: 10vh;
@@ -247,7 +247,7 @@ html {
 
 /* contacto */
 .sectionBodyContacto {
-  background-image: url(../media/preguntas_frecuentes_background.jpg); }
+  background-image: url(../media/preguntas_frecuentes_background.webp); }
 
 @media (min-width: 651px) and (max-width: 1000px) {
   /*Header*/
