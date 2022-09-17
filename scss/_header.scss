@@ -7,6 +7,8 @@
 .itemsNav {
     font-family:'Roboto', sans-serif;
     border: $nav_border_active_black;
+    border-radius: 10px;
+    text-align: center;
     font-size: 1.5rem;
     color: $color_white;
     margin-right: $margin_right_5;
