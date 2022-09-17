@@ -312,6 +312,8 @@ html {
     top: 20px;
     left: 20px;
     font-size: 2rem; }
+  .colorHeaderCursos {
+    color: gray; }
   .imageServicios {
     height: 150px;
     width: 150px; }
