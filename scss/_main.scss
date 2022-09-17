@@ -132,6 +132,8 @@ $map_main: (font-weight: bold,text-align: center,color: black);
 }
 
 .wrapNuestrosServicios h3 {
+    background-color: black;
+    opacity: 60%;
     position: absolute;
     top: 20px;
     left: 20px;
@@ -334,10 +336,6 @@ $map_main: (font-weight: bold,text-align: center,color: black);
         top: 20px;
         left: 20px;
         font-size: 2rem;
-    }
-
-    .colorHeaderCursos {
-        color:gray;
     }
 
     .imageServicios {
