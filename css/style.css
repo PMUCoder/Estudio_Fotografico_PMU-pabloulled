@@ -14,18 +14,28 @@
 html {
   font-size: 62.5%; }
 
+.posicion {
+  margin-top: 10px;
+  margin-right: 10px;
+  background-color: lightgray; }
+
 .itemsNav {
   font-family: 'Roboto', sans-serif;
   border: solid 1px black;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: white;
   margin-right: 5px;
   margin-left: 5px;
   transition: border 0.2s; }
   .itemsNav:hover {
-    border: solid 1px white; }
-  .itemsNav .itemActivo {
-    border: solid 1px white; }
+    border: solid 1px white;
+    color: black;
+    font-weight: bold; }
+
+.itemActivo {
+  border: solid 1px white;
+  color: black;
+  font-weight: bold; }
 
 @media (min-width: 651px) and (max-width: 1000px) {
   .itemsNav {

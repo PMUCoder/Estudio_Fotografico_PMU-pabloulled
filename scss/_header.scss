@@ -1,20 +1,33 @@
-    .itemsNav {
-        font-family:'Roboto', sans-serif;
-        border: $nav_border_active_black;
-        font-size: 2rem;
-        color: $color_white;
-        margin-right: $margin_right_5;
-        margin-left: $margin_left_5;
-        transition: border 0.2s;
+.posicion {
+    margin-top: 10px;
+    margin-right: 10px;
+    background-color: lightgray;
+}
 
-        &:hover {
-            border: $nav_border_active_white;
-        }
-
-        .itemActivo {
-            border: $nav_border_active_white;
-        }
+.itemsNav {
+    font-family:'Roboto', sans-serif;
+    border: $nav_border_active_black;
+    font-size: 1.5rem;
+    color: $color_white;
+    margin-right: $margin_right_5;
+    margin-left: $margin_left_5;
+    transition: border 0.2s;
+    
+    &:hover {
+        border: $nav_border_active_white;
+        color: black;
+        font-weight: bold;
     }
+}
+
+    .itemActivo {
+        border: $nav_border_active_white;
+        color: black;
+        font-weight: bold;
+    }
+
+
+
 
 @media (min-width:651px) and (max-width:1000px) {
 
