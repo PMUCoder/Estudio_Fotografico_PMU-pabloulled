@@ -162,7 +162,9 @@ html {
   text-align: center;
   font-family: 'Roboto', sans-serif;
   font-size: 1.5rem;
-  color: white;
+  font-weight: bold;
+  background-color: white;
+  color: black;
   border: solid 0.5rem white;
   border-radius: 5px 5px 30px 30px;
   height: 250px;
@@ -345,7 +347,7 @@ html {
     text-align: center; }
   /*Index*/
   .eventos .h2Index, .eventos .h2IndexBlack, .estudio .h2Index, .estudio .h2IndexBlack, .corporativo .h2Index, .corporativo .h2IndexBlack, .viajes .h2Index, .viajes .h2IndexBlack, .cursos .h2Index, .cursos .h2IndexBlack {
-    font-size: 2rem; }
+    font-size: 4rem; }
   .eventos img, .estudio img, .corporativo img, .viajes img, .cursos img {
     width: 80vw;
     border: solid 0.2rem white;

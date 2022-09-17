@@ -153,7 +153,9 @@ $map_main: (font-weight: bold,text-align: center,color: black);
     text-align: center;
     font-family:'Roboto', sans-serif;
     font-size: 1.5rem;
-    color:white;
+    font-weight: bold;
+    background-color: white;
+    color:black;
     border: solid 0.5rem white ;
     border-radius: 5px 5px 30px 30px;
     height: 250px;
@@ -416,7 +418,7 @@ $map_main: (font-weight: bold,text-align: center,color: black);
     .eventos, .estudio, .corporativo, .viajes, .cursos {
 
         .h2Index, .h2IndexBlack {
-            font-size: $font_size_7 - 5rem;        
+            font-size: $font_size_7 - 3rem;        
         }
 
         img {
