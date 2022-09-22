@@ -1,10 +1,9 @@
-.posicion {
-    margin-top: 10px;
-    margin-right: 10px;
-    background-color: lightgray;
-}
-
 header {
+    .posicion {
+        margin-top: 10px;
+        margin-right: 10px;
+        background-color: lightgray;
+    }
     .styleItmesNav{
         .itemsNav {
             font-family:'Roboto', sans-serif;
@@ -32,11 +31,6 @@ header {
     }
 }
 
-
-
-
-
-
 @media (min-width:651px) and (max-width:1000px) {
 
     header {
@@ -45,9 +39,7 @@ header {
                 font-size: 1.5rem;
             }
         }
-    }
 
-    header {
         .logoSize {
             width: 300px;
             height: auto;
@@ -63,9 +55,7 @@ header {
                 font-size: 1rem;
             }
         }
-    }
 
-    header {
         .logoSize {
             width: 150px;
             height: auto;

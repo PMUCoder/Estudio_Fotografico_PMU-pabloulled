@@ -14,7 +14,7 @@
 html {
   font-size: 62.5%; }
 
-.posicion {
+header .posicion {
   margin-top: 10px;
   margin-right: 10px;
   background-color: lightgray; }
