@@ -23,39 +23,52 @@ header {
                 font-weight: bold;
             }
         }
+        
+        .itemActivo {
+            border: $nav_border_active_white;
+            color: black;
+            font-weight: bold;
+        }
     }
 }
 
-    .itemActivo {
-        border: $nav_border_active_white;
-        color: black;
-        font-weight: bold;
-    }
+
 
 
 
 
 @media (min-width:651px) and (max-width:1000px) {
 
-    .itemsNav {
-        font-size: 1.5rem;
+    header {
+        .styleItmesNav {
+            .itemsNav {
+                font-size: 1.5rem;
+            }
+        }
     }
 
-    .logoSize {
-        width: 300px;
-        height: auto;
+    header {
+        .logoSize {
+            width: 300px;
+            height: auto;
+        }
     }
 }
 
-
 @media (max-width:650px) {
 
-    .itemsNav {
-        font-size: 1rem;
+    header {
+        .styleItmesNav{
+            .itemsNav {
+                font-size: 1rem;
+            }
+        }
     }
 
-    .logoSize {
-        width: 150px;
-        height: auto;
+    header {
+        .logoSize {
+            width: 150px;
+            height: auto;
+        }
     }
 }

@@ -34,22 +34,22 @@ header .styleItmesNav .itemsNav {
     color: black;
     font-weight: bold; }
 
-.itemActivo {
+header .styleItmesNav .itemActivo {
   border: solid 1px white;
   color: black;
   font-weight: bold; }
 
 @media (min-width: 651px) and (max-width: 1000px) {
-  .itemsNav {
+  header .styleItmesNav .itemsNav {
     font-size: 1.5rem; }
-  .logoSize {
+  header .logoSize {
     width: 300px;
     height: auto; } }
 
 @media (max-width: 650px) {
-  .itemsNav {
+  header .styleItmesNav .itemsNav {
     font-size: 1rem; }
-  .logoSize {
+  header .logoSize {
     width: 150px;
     height: auto; } }
 
