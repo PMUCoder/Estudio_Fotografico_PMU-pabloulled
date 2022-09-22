@@ -459,10 +459,6 @@ footer {
     footer .socialMediaIconsCont a:hover {
       color: white; }
 
-@media (min-width: 651px) and (max-width: 1000px) {
-  .containerFooterEnlaces {
-    display: none; } }
-
-@media (max-width: 650px) {
+@media (max-width: 1000px) {
   .containerFooterEnlaces {
     display: none; } }
