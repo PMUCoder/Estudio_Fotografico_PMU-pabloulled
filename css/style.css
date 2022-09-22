@@ -19,7 +19,7 @@ html {
   margin-right: 10px;
   background-color: lightgray; }
 
-.itemsNav {
+header .styleItmesNav .itemsNav {
   font-family: 'Roboto', sans-serif;
   border: solid 1px black;
   border-radius: 10px;
@@ -29,7 +29,7 @@ html {
   margin-right: 5px;
   margin-left: 5px;
   transition: border 0.2s; }
-  .itemsNav:hover {
+  header .styleItmesNav .itemsNav:hover {
     border: solid 1px white;
     color: black;
     font-weight: bold; }

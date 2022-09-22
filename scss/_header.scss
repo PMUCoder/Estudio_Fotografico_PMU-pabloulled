@@ -4,21 +4,25 @@
     background-color: lightgray;
 }
 
-.itemsNav {
-    font-family:'Roboto', sans-serif;
-    border: $nav_border_active_black;
-    border-radius: 10px;
-    text-align: center;
-    font-size: 1.5rem;
-    color: $color_white;
-    margin-right: $margin_right_5;
-    margin-left: $margin_left_5;
-    transition: border 0.2s;
-    
-    &:hover {
-        border: $nav_border_active_white;
-        color: black;
-        font-weight: bold;
+header {
+    .styleItmesNav{
+        .itemsNav {
+            font-family:'Roboto', sans-serif;
+            border: $nav_border_active_black;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 1.5rem;
+            color: $color_white;
+            margin-right: $margin_right_5;
+            margin-left: $margin_left_5;
+            transition: border 0.2s;
+            
+            &:hover {
+                border: $nav_border_active_white;
+                color: black;
+                font-weight: bold;
+            }
+        }
     }
 }
 
