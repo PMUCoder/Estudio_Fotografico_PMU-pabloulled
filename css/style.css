@@ -66,7 +66,6 @@ header .styleItmesNav .itemActivo {
 .eventos img, .estudio img, .corporativo img, .viajes img, .cursos img {
   width: 40vw;
   height: auto;
-  object-fit: contain;
   border: solid 0.5rem white;
   border-radius: 30px;
   transition: width 0.2s; }
